@@ -24,7 +24,9 @@ export default function PhotoData() {
                 pics.map((pic) => {
                     return (
                         <div>
-                            <h3>{pic.camera.name}</h3>
+                            <h5>{pic.camera.full_name}</h5>
+                            <img src={pic.img_src} alt="curiosity image" width="300px"></img>
+                            {/* <h5></h5> */}
                         </div>
                     )
                 })
